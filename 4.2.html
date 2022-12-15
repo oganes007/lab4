@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<HEAD>
+<script language="JavaScript">
+    function treo(obj)
+    {
+        let st1=parseInt(prompt('Введите 1 сторону',''));
+        let st2=parseInt(prompt('Введите 2 сторону',''));
+        let st3=parseInt(prompt('Введите 3 сторону',''));
+        if(st1 + st2>st3 && st1!=='' && st2!=='' && st3!=='')
+        {
+            obj.otv.value="Существует";
+        }
+        else obj.otv.value="Не существует";}
+</script>
+</HEAD>
+<BODY>
+<form name ="form1">
+<input type="button" value = "Ввод 3х сторон" onClick="treo(form1)">
+<hr>
+Ответ:<input type="text" name="otv">
+</form>
+</BODY>
+</html> 
